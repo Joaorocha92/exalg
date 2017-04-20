@@ -1,4 +1,4 @@
-public static void main(String[] args) {
+ public static void main(String[] args) {
         Scanner leia = new Scanner (System.in);
         int n;
         int soma=0,resultado=0,num=0;
@@ -7,14 +7,16 @@ public static void main(String[] args) {
         n = leia.nextInt();
         
 
-        while(num <= n){  
+        while(num < n){  
             
-          soma = soma++;  
+          soma = soma + 1;
+          
           resultado = resultado+soma;  
         
-          num = num++;
+          num = num+1;
             
-        }System.out.print("Resultado: "+resultado);
+        }
+        System.out.print("Resultado: "+resultado);
     }
     
 }
