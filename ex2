@@ -1,0 +1,20 @@
+public static void main(String[] args) {
+        Scanner leia = new Scanner (System.in);
+        int n;
+        int soma=0,resultado=0,num=0;
+        
+        System.out.println("Digite n1: ");
+        n = leia.nextInt();
+        
+
+        while(num <= n){  
+            
+          soma = soma++;  
+          resultado = resultado+soma;  
+        
+          num = num++;
+            
+        }System.out.print("Resultado: "+resultado);
+    }
+    
+}
