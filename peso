@@ -1,0 +1,21 @@
+public static void main(String[] args) {
+     double h,p,m;
+        Scanner leitor = new Scanner (System.in);
+        System.out.print("Digite sua altura: ");
+        h = leitor.nextDouble();
+        System.out.print("Digite seu peso: ");
+        p = leitor.nextDouble();
+        m = p/ Math.pow(h, 2);
+        
+        if(m<26){
+            System.out.print("Normal");
+        }
+        else if((m >= 26)&& (m<30))  {
+        System.out.print("Obeso");
+    }
+    
+        else if(m >= 30) {
+            System.out.print("Obeso mórbido");   
+        }
+    }
+ }
