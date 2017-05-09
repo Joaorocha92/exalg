@@ -1,0 +1,22 @@
+public static void main(String[] args) {
+     float kwh,r,r1,r2;
+        Scanner leia = new Scanner (System.in);
+        System.out.print("Digitar o consumo de Kwh: ");
+        kwh = leia.nextFloat();
+        if (kwh<150){ 
+            r = (11.90f*0.20f);
+            System.out.print("Valor:" + r );
+        }
+        else if ((kwh>=150)&&(kwh<500)){
+          r1= (11.90f*0.25f);
+            System.out.print("Valor:" + r1);}
+            
+        else if (kwh>=500){
+                r2= (11.90f*0.30f);
+                System.out.print("Valor:" +r2);
+                }   
+        
+     
+    }
+    
+}
