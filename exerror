@@ -1,0 +1,23 @@
+public static void main(String[] args) {
+        
+        Scanner leia = new Scanner (System.in);
+        System.out.print("Digite a quantidade de alunos :");
+        int alunos = leia.nextInt();
+        int x = 0;
+        double nota1=0;
+        double nota =0;
+        while(x!=alunos){
+            System.out.print("Digite a nota: ");
+            nota = leia.nextDouble();
+            nota1 = nota1+nota;
+           
+            x = x++;
+            
+        }
+        double resultado;
+        resultado =   (nota1/alunos);
+        System.out.print("Nota média: "+resultado);
+        
+    }
+   
+}
