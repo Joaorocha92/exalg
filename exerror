@@ -1,21 +1,26 @@
-public static void main(String[] args) {
+    public static void main(String[] args) {
+    
         
         Scanner leia = new Scanner (System.in);
         System.out.print("Digite a quantidade de alunos :");
+        
         int alunos = leia.nextInt();
         int x = 0;
+        
         double nota1=0;
         double nota =0;
-        while(x!=alunos){
+        
+        while(alunos > x){
             System.out.print("Digite a nota: ");
             nota = leia.nextDouble();
-            nota1 = nota1+nota;
+            nota1 = (double) nota1+nota;
            
-            x = x++;
-            
+            x = x+1;
+                      
         }
+        
         double resultado;
-        resultado =   (nota1/alunos);
+        resultado = (double) (nota1/alunos);
         System.out.print("Nota média: "+resultado);
         
     }
