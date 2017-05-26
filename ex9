@@ -1,0 +1,32 @@
+public class lista3ex9 {
+    static Scanner leia = new Scanner(System.in);
+    static int a =0;
+     static int m =0;
+      static int d =0;
+    
+    static int anos(int a, int m, int d){
+        
+        a= 365*a;
+        m = 30 * m;
+        d = d;
+        
+        int result = a+m+d;
+        
+        
+        return result;
+    }
+    
+    public static void main(String[] args) {
+        System.out.println("quantos anos vc tem");
+        a = leia.nextInt();
+        System.out.println("quantos meses");
+        m = leia.nextInt();
+        System.out.println("quantos dias");
+        d = leia.nextInt();
+        int status = anos(a, m, d);
+        System.out.println(status+" dias");
+        
+        
+        
+    }
+}
