@@ -1,0 +1,37 @@
+ static Scanner leia = new Scanner(System.in);
+    
+
+    //exercicio 5
+    static double baskhara(double a, double b, double c) {
+        double delta, result = 0;
+        double raiz;
+
+        delta = ((b * b) - (4 * (a * c)));
+        
+        raiz =(double) Math.sqrt(delta);
+        
+        double x1 = -b + raiz / 2 * a;
+        
+        double x2 = -b - raiz / 2 * a;
+        
+
+        if (x1 > x2) {
+            result = x1;
+        } else {
+            result = x2;
+        }
+        return result;
+    }
+    public static void main(String[] args) {
+
+        
+        double a = leia.nextDouble();
+        double b = leia.nextDouble();
+        double c = leia.nextDouble();
+        
+
+        double status = baskhara(a, b, c);
+        System.out.println("o valor e: ");
+        System.out.println(status);
+    }
+}
